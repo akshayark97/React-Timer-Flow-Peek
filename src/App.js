@@ -1,7 +1,12 @@
-import "./App.css";
+import CustomPieChart from "./components/Chart/Chart";
+import Header from "./components/Header/Header";
+import { MainContainer } from "./main";
 
-function App() {
-  return <div className="App">Hello</div>;
+export default function App() {
+  return (
+    <MainContainer>
+      <Header />
+      <CustomPieChart />
+    </MainContainer>
+  );
 }
-
-export default App;
